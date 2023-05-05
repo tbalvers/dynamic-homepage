@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    background-image: url('ea2b5296d4de82b9bfbc.jpg');
+    background-size: cover;
+    padding: 0;
+    display: flex;
+}
+
+.sidebar {
+    flex: 1;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.616);
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.main {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.fade {
+    animation: fadeInAnimation ease-in-out 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+h1 {
+    color: #EEEEEE;
+    text-align: center;
+    font-weight: 300;
+    font-size: 6rem;
+    margin: 0;
+    padding: 0;
+    font-family: 'Italianno', serif;
+    max-width: 20ch;
+}
+
+.sidebar img {
+    width: 80%;
+    margin: 2rem;
+}
+
+.sidebar a {
+    font-family: 'Roboto', sans-serif;
+    color: #EEEEEE;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 5px;
+    transition: transform 0.4s;
+}
+
+a:hover {
+    transform: translateY(-0.75rem);
+    filter: brightness(120%);
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.active {
+    border-bottom: solid white 3px;
+}
+
+.main p {
+    font-family: 'Roboto', sans-serif;
+    color: #DDDDDD;
+    width: clamp(35ch, 90%, 70ch);
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.689);
+    width: clamp(35ch, 50%, 85ch);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+}
+
+.container.products {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container.products p {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #CCCCCC;
+}
+
+.card img {
+    width: 15rem;
+    border-radius: 50%;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #5e5e5e;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #313131;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
